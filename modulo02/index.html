@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+        /* É assim que baixa font em uma pasta e usa no site*/
+        @font-face {
+            font-family: 'BlackMing';
+            src: url(fontes/Black\ Ming.otf) format('opentype'), url(fontes/Black\ Ming.ttf) format('truetype');
+        }
+        /*Tipos do format(): opentype(otf), truetype(ttf), embedded-opentype, truetype-aat(Apple Advanced Typography),svg */
+        body{
+            font-family: 'Kaushan Script', sans-serif;
+            /*
+            Medidas absolutas: cm, mm, in, px, pt, pc
+            Medidas relativas: em, ex, rem, vw, vh, %
+            tamanha padrão são 16px ou 1 em
+            */
+            font-size: 1em;
+            font-weight: bold;
+            font-style: italic;
+            text-decoration:underline;
+            /*lighter, normal, bold, bolder*/ 
+        }
+        
+        h1{
+            font-family: 'BlackMing', sans-serif;
+            font-weight: bolder;
+            font-size: 6em;
+            font-style: italic;
+            text-align: center;
+            }
+        h2{
+             /*shorthand font
+                font-style -> font-weight -> font-size -> font-family*/
+            font: italic bolder 3em 'Kaushan Script';
+            text-align: right;
+        }
+        p{
+            text-align: justify;
+            text-indent: 30px;
+        }
+
+    </style>
+</head>
+<body >
+    <h1>Teste de fontes</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi tempora enim quas reprehenderit temporibus soluta quae laboriosam iure, repellat perspiciatis possimus pariatur neque ipsam quidem labore ut nesciunt, rerum repellendus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus tenetur et in dolorem enim quaerat iusto ullam. Enim explicabo nam ipsum voluptas temporibus, ab voluptate quidem, voluptatibus odit fugiat neque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, rerum atque? Explicabo nesciunt quas architecto odit molestiae dolore, vitae voluptatem eaque illum, laborum distinctio illo ipsam facere, asperiores ratione vero.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit dignissimos nulla quis eos voluptatum, nisi impedit, incidunt autem neque unde quo, repudiandae culpa dolor tempora ad velit nemo accusamus omnis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium nam dolores explicabo omnis obcaecati qui! Nesciunt, illum commodi optio consectetur ducimus sequi dolorum eveniet a soluta corporis sed ipsam Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur nemo ipsa non blanditiis fuga rem eligendi inventore, unde obcaecati at cumque rerum minima deleniti fugit iste tempora libero aliquid. Molestias.</p>
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi voluptas necessitatibus eius reprehenderit sed sint nostrum, dicta repellat, temporibus ratione vitae ipsam voluptates obcaecati? Similique corporis praesentium quas tempora incidunt.;Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque rem excepturi, sit quisquam voluptatibus iste. Aspernatur earum rerum optio eius culpa qui perspiciatis obcaecati voluptatem! Officia vel cupiditate ipsam mollitia?</p>
+</body>
+</html>

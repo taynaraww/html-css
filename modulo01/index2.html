@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aulas de 09 a 12</title>
+    <style>
+        body{
+            background-color: lightblue;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+        }
+        h1{
+            color: blue;
+        }
+        h2{
+            color: beige;
+            background-color: blue;
+        }
+        h3{
+            color: lightyellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>Listas</h1>
+    <h2>Ordenadas</h2>
+    <ol type="1" start="5">
+        <li>Acordar</li>
+        <li>Beber água</li>
+        <li>Comer</li>
+        <li>Mimir de novo</li>
+    </ol>
+
+    <h2>Não ordenadas</h2>
+    <ul type="square">
+        <li>Pão</li>
+        <li>Leite</li>
+        <li>Queijo</li>
+        <li>Tomate</li>
+    </ul>
+
+    <hr>
+   <h2>Listas mistas</h2>
+   <ol>
+    <li>Comidas</li>
+    <ol type="a">
+        <li>Macarronada</li>
+        <li>Lasanha</li>
+        <li>Chocolate</li>
+        <li>Feijoada</li>
+    </ol>
+    <li>Bebidas</li>
+    <ol type="a">
+        <li>Achocolatado</li>
+        <li>Suco de laranja</li>
+        <li>Caipirinha</li>
+        <li>Café preto</li>
+    </ol>
+   </ol>
+
+   <ol>
+    <li>Lugares que quero conhecer</li>
+    <ul>
+        <li>Argentina</li>
+        <ul type="circle">
+            <li>Barcelona</li>
+        </ul>
+        <li>Itália</li>
+        <ul type="circle">
+            <li>Roma</li>
+        </ul>
+        <li>Austrália</li>
+        <ul type="circle">
+            <li>Sydney</li>
+        </ul>
+        <li>África do  Sul</li>
+        <ul type="circle">
+            <li>Cidade de Cabo</li>
+        </ul>
+    </ul>
+   </ol>
+   <h2>Listas de definição</h2>
+   <dl>
+    <dt>HTML</dt>
+    <dd>Linguagem de marcação para a criação do conteúdo de um site</dd>
+   </dl>
+   <hr>
+   <br>
+   <h2>Links e âncoras</h2>
+   <h4>Links externos</h4>
+   <p>Você pode usar o meu <a href="https://github.com/taynaraww" target="_blank" rel="external">repositório público do GitHub</a></p>
+   <p>Você pode acessar o meu <a href="https://www.youtube.com/channel/UCsFhCgOz4yGeLBRkROrnXbg" target="_blank" rel="external"> canal gratuito no YouTube</a></p>
+   <hr>
+   <br>
+   <h2>Links internos</h2>
+   <p>Você também pode entrar na minha <a href="pag02.html" rel="next">segunda página</a></p>
+   <p>Também temos a <a href="noticias/pag03.html">página 03</a>
+   </p>
+   <hr>
+   <br>
+   <h2>Link para download</h2>
+   <ul>
+    <li><a href="livro/Muitas vidas, muitos mestres - Weiss, Brian L_.PDF" download="meu livro pdf" type="application/pdf">Baixar livro em pdf</a></li>
+    <li><a href="#">Livro em zip</a></li> <!-- o # significa link vazio -->
+    <li><a href="#">Livro - parte 02</a></li>
+   </ul>
+   <hr>
+   <br>
+   <h2>Imagem dinâmica</h2>
+   <p>Imagens de tamanhos diferentes</p>
+   <picture>
+        <!--tem que seguir essa ordem: a imagem original em img e ir diminuindo pra cima-->
+        <source media="(max-width: 750px)" srcset="imagens/pAmarelo.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/mRosa.png" type="image/png">
+        <img src="imagens/gVerde.png" alt="imagem flexivel">
+   </picture>
+   <hr>
+   <br>
+   <h2>Áudio no site</h2>
+   <p>Vamos apredner a reproduzir áudios em HTML</p>
+   <audio preload="metadata" autoplay controls>
+        <source src="midias/LazyLaura_QuincasMoreira.mp3" type="audio/mpeg">
+   <p>Infelizmente seu pc bosta não reproduz audios, então clique para baixar.</p> <!--só vai aparecer isso se o arquivo não carregar-->
+   <a href="midias/LazyLaura_QuincasMoreira.mp3">Clique aqui para baixar.</a>
+   </audio>
+   <hr>
+   <br>
+   <h2>Vídeos hospedados localmente</h2>
+   <video src="midias/video.mp4" width="560" poster="imagens/capadovideo.png" controls autoplay loop></video> <!--o ideal é colocar em todos os formatos-->
+   <hr>
+   <br>
+   <h2>Vídeos externos</h2>
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/GQYVu94I998?si=FGbLJ27T5DDjBW82" title="YouTube video player" frameborder="0" 
+   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+   <hr>
+   <br>
+   <h2>Iniciando CSS Inline</h2>
+   <h3 style="color: blue; font-size: 1.5em;">Capítulo 1</h3>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, officiis. Assumenda expedita accusantium dicta sit animi exercitationem autem maiores. Nihil odit vitae sed minus aut qui debitis ab tenetur laudantium.</p>
+   <h3 style="color: brown; font-size: 1.2em;">Capítulo 2</h3>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto temporibus dolorum pariatur doloribus neque fugiat minima, ipsa beatae sequi dignissimos rem et quasi, sint laboriosam obcaecati. Enim, quidem aspernatur. Eligendi?</p>
+   <h3 style="color: cornsilk; background-color: cornflowerblue;">Capítulo 3</h3>
+   <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat mollitia aut adipisci sint ratione cumque odio repudiandae tempore quidem, quo recusandae, ex, repellendus ipsum ad necessitatibus numquam totam itaque maiores?</p>
+   <hr>
+   <br>
+   <h2>CSS Interno</h2>
+   <h3>Capítulo 1</h3>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, officiis. Assumenda expedita accusantium dicta sit animi exercitationem autem maiores. Nihil odit vitae sed minus aut qui debitis ab tenetur laudantium.</p>
+   <h3>Capítulo 2</h3>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto temporibus dolorum pariatur doloribus neque fugiat minima, ipsa beatae sequi dignissimos rem et quasi, sint laboriosam obcaecati. Enim, quidem aspernatur. Eligendi?</p>
+   <h3>Capítulo 3</h3>
+   <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat mollitia aut adipisci sint ratione cumque odio repudiandae tempore quidem, quo recusandae, ex, repellendus ipsum ad necessitatibus numquam totam itaque maiores?</p>
+   <hr>
+   <br>
+   <h2>CSS Externo</h2>
+   <h3>Capítulo 1</h3>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, officiis. Assumenda expedita accusantium dicta sit animi exercitationem autem maiores. Nihil odit vitae sed minus aut qui debitis ab tenetur laudantium.</p>
+   <h3>Capítulo 2</h3>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto temporibus dolorum pariatur doloribus neque fugiat minima, ipsa beatae sequi dignissimos rem et quasi, sint laboriosam obcaecati. Enim, quidem aspernatur. Eligendi?</p>
+   <h3>Capítulo 3</h3>
+   <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat mollitia aut adipisci sint ratione cumque odio repudiandae tempore quidem, quo recusandae, ex, repellendus ipsum ad necessitatibus numquam totam itaque maiores?</p>
+   <p><a href="pagina2.html" target="_self">Ir para a página 2</a></p>
+</body>
+</html>
